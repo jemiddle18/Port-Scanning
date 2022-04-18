@@ -1,4 +1,8 @@
 import socket
+import pyfiglet
+
+ascii_banner = pyfiglet.figlet_format("PORT SCANNER") # Banner for script
+print(ascii_banner) # Printing out the banner at the start of the script.
 
 for port in range(1,4000): # Loop to check if a port is open. Looping throughout the designated range.
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) # Open up the socket and a stream.
